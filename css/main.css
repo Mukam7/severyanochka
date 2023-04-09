@@ -19,7 +19,7 @@ li {
 }
 
 .container {
-  width: 1240px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -64,7 +64,7 @@ li {
   width: 100%;
   display: none;
   position: absolute;
-  top: 100px;
+  top: 98px;
   left: 0;
   z-index: 1;
   background-color: #fff;
@@ -134,10 +134,118 @@ li {
 }
 
 .main-section1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 100px;
+  background-image: url(../images/home-big-bg.png);
+}
+.main-section1 h1 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 150%;
+  color: #414141;
+}
+
+.big-home {
+  background-color: #fbf8ec;
   padding-top: 100px;
 }
-.main-section1 img {
-  width: 100% !important;
+.big-home .prodacts-content,
+.big-home .novinka-link,
+.big-home .before-buy-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 70px;
+}
+.big-home .prodacts-content h1,
+.big-home .novinka-link h1,
+.big-home .before-buy-link h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+.big-home .prodacts-content a,
+.big-home .novinka-link a,
+.big-home .before-buy-link a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #606060;
+}
+.big-home .popular-row,
+.big-home .novinka-row,
+.big-home .before-buy-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.big-home .popular-row .popular-card,
+.big-home .novinka-row .popular-card,
+.big-home .before-buy-row .popular-card {
+  background: #ffffff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.big-home .popular-row .popular-card .popular-card-footer,
+.big-home .novinka-row .popular-card .popular-card-footer,
+.big-home .before-buy-row .popular-card .popular-card-footer {
+  padding: 10px 20px;
+}
+.big-home .popular-row .popular-card .popular-card-footer .popular-card-prices,
+.big-home .novinka-row .popular-card .popular-card-footer .popular-card-prices,
+.big-home .before-buy-row .popular-card .popular-card-footer .popular-card-prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.big-home .popular-row .popular-card .popular-card-footer .popular-card-prices h5,
+.big-home .novinka-row .popular-card .popular-card-footer .popular-card-prices h5,
+.big-home .before-buy-row .popular-card .popular-card-footer .popular-card-prices h5 {
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 16px;
+  color: #606060;
+}
+.big-home .popular-row .popular-card .popular-card-footer .popular-card-prices p,
+.big-home .novinka-row .popular-card .popular-card-footer .popular-card-prices p,
+.big-home .before-buy-row .popular-card .popular-card-footer .popular-card-prices p {
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 12px;
+  color: #bfbfbf;
+}
+.big-home .popular-row .popular-card .popular-card-footer .popular-card-footer-bott p,
+.big-home .novinka-row .popular-card .popular-card-footer .popular-card-footer-bott p,
+.big-home .before-buy-row .popular-card .popular-card-footer .popular-card-footer-bott p {
+  padding-top: 5px;
+}
+.big-home .popular-row .popular-card .popular-card-footer .popular-card-footer-bott .star-rating5,
+.big-home .novinka-row .popular-card .popular-card-footer .popular-card-footer-bott .star-rating5,
+.big-home .before-buy-row .popular-card .popular-card-footer .popular-card-footer-bott .star-rating5 {
+  color: #ff6633;
+  font-size: 20px;
+}
+.big-home .popular-row .popular-card .popular-card-footer .popular-card-footer-bott button,
+.big-home .novinka-row .popular-card .popular-card-footer .popular-card-footer-bott button,
+.big-home .before-buy-row .popular-card .popular-card-footer .popular-card-footer-bott button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 7px;
+  border: 1px solid #70c05b;
+  background: #ffffff;
+  border-radius: 4px;
+  color: #70c05b;
+}
+.big-home .popular-row .popular-card .popular-card-footer .popular-card-footer-bott button:hover,
+.big-home .novinka-row .popular-card .popular-card-footer .popular-card-footer-bott button:hover,
+.big-home .before-buy-row .popular-card .popular-card-footer .popular-card-footer-bott button:hover {
+  border: none;
+  background: #ff6633;
+  transition: 0.5s ease;
+  color: white;
 }
 
 @media (max-width: 1200px) {
@@ -153,6 +261,12 @@ li {
   }
   .nav-link-right .nav-link-right-r2 a img {
     width: 200px;
+  }
+  .popular-row,
+  .novinka-row,
+  .before-buy-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 @media (max-width: 768px) {
@@ -174,9 +288,17 @@ li {
     font-size: 10px;
   }
   .main-section1 img {
-    position: absolute;
-    top: 70px;
-    padding: 0 !important;
+    display: none;
+  }
+  .main-section1 h1 {
+    text-align: center;
+  }
+  .popular-row,
+  .novinka-row,
+  .before-buy-row {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
   }
 }
 @media (max-width: 550px) {

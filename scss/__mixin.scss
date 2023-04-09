@@ -1,0 +1,39 @@
+@mixin h1link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+
+@mixin alink {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #606060;
+}
+
+@mixin allLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+@mixin font-height {
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@mixin popularRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@mixin popularCard {
+  background: #ffffff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+
