@@ -61,7 +61,7 @@ const prodacts = [
     price: 91,
     rating: 5.2,
     discount: 50,
-    image: "../images/bottle2.png",
+    image: "../images/novinka-card3.png",
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ const prodacts = [
     price: 61,
     rating: 5.4,
     discount: 20,
-    image: "../images/card-malako2.png",
+    image: "../images/novinka-card4.png",
   },
   {
     id: 9,
@@ -101,7 +101,7 @@ const prodacts = [
     price: 79,
     rating: 5,
     discount: 0,
-    image: "../images/bottle-meat3.png",
+    image: "../images/novinka-card2.png",
   },
   {
     id: 11,
@@ -111,7 +111,7 @@ const prodacts = [
     price: 89,
     rating: 2,
     discount: 50,
-    image: "../images/bottle2.png",
+    image: "../images/novinka-card3.png",
   },
   {
     id: 12,
@@ -121,6 +121,21 @@ const prodacts = [
     price: 61,
     rating: 2,
     discount: 20,
-    image: "../images/card-malako2.png",
+    image: "../images/novinka-card4.png",
+  },
+];
+
+let massive_ofisser = [
+  {
+    id: 1,
+    name: "Оформите карту «Северяночка»",
+    about: "И получайте бонусы при покупке в магазинах и на сайте",
+    img: "../images/massive2-img1.png",
+  },
+  {
+    id: 2,
+    name: "Покупайте акционные товары",
+    about: "И получайте вдвое больше бонусов",
+    img: "../images/massive2-img2.png",
   },
 ];

@@ -180,9 +180,8 @@ function getCardNovinka(img, name, description, rating) {
   const starRating = document.createElement("p");
   starRating.className = "star-rating5";
 
-let stars = "★".repeat(rating) + "☆".repeat(5 - rating);
-starRating.innerHTML = stars || "Bunaqa reyting yo'q!!!";
-
+  let stars = "★".repeat(rating) + "☆".repeat(5 - rating);
+  starRating.innerHTML = stars || "Bunaqa reyting yo'q!!!";
 
   const cardBtn = document.createElement("button");
   cardBtn.innerHTML = "В корзину";
@@ -291,3 +290,65 @@ prodacts
     let card3 = getCardBefore(el.image, el.name, el.description, el.rating);
     beforeBuyRow.appendChild(card3);
   });
+
+// special offers
+
+const bigHome3 = document.querySelector(".big-home");
+
+const container5 = document.createElement("div");
+container5.className = "container";
+
+const massive_ofisserBox = document.createElement("section");
+massive_ofisserBox.id = "ofiserr-box";
+
+const ofiserr_Box_title = document.createElement("div");
+ofiserr_Box_title.className = "ofiserr-box-title";
+
+const h1_ofiserr_title = document.createElement("h1");
+h1_ofiserr_title.innerHTML = "Специальные предложения";
+
+const ofiserr_Box_card = document.createElement("div");
+ofiserr_Box_card.className = "ofiserr-box-card";
+
+const offersBoxLeft = document.createElement("div");
+offersBoxLeft.className = "ofiserr-box-left";
+
+const offersBoxRight = document.createElement("div");
+offersBoxRight.className = "ofiserr-box-right";
+
+bigHome3.append(massive_ofisserBox);
+massive_ofisserBox.append(container5);
+container5.append(ofiserr_Box_title, ofiserr_Box_card);
+ofiserr_Box_card.append(offersBoxLeft, offersBoxRight);
+ofiserr_Box_title.append(h1_ofiserr_title);
+
+massive_ofisser.forEach((ofiserr, index) => {
+  const card = document.createElement("div");
+  card.className = "card";
+
+  const cardTitle = document.createElement("h2");
+  cardTitle.innerHTML = ofiserr.name;
+
+  const cardText = document.createElement("p");
+  cardText.innerHTML = ofiserr.about;
+
+  const cardImg = document.createElement("img");
+  cardImg.alt = ofiserr.name;
+  cardImg.src = ofiserr.img;
+
+  const card_title777 = document.createElement("div");
+  card_title777.className = "card-title";
+
+  const cardBody = document.createElement("div");
+  cardBody.className = "card-body";
+
+  card.append(card_title777, cardBody);
+  card_title777.append(cardTitle, cardText);
+  cardBody.append(cardImg);
+
+  if (index % 2 === 0) {
+    offersBoxLeft.append(card);
+  } else {
+    offersBoxRight.append(card);
+  }
+});
