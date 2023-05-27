@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Северяночка</title>
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/index.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -21,12 +21,14 @@
           <div class="container">
             <div class="nav-link">
               <div class="logo-img">
-                <img
-                  class="logo-1"
-                  src="images/logo-severyanochka.png"
-                  alt="logo-img"
-                />
-                <img class="logo-2-mobile" src="images/logo-2-icon.png" />
+                <a href="index.html">
+                  <img
+                    class="logo-1"
+                    src="images/index/logo-severyanochka.png"
+                    alt="logo-img"
+                /></a>
+
+                <img class="logo-2-mobile" src="images/index/logo-2-icon.png" />
               </div>
               <div class="nav-link-box">
                 <div class="btn-box">
@@ -72,27 +74,62 @@
                 </div>
                 <div class="search">
                   <input type="text" placeholder="Найти товар" />
-                  <img src="images/search.png" />
+                  <img src="images/index/search.png" />
                 </div>
                 <div class="nav-link-right">
                   <div class="nav-link-right-left">
                     <div class="icon-like">
-                      <a href="#"><img src="images/like-icon.png" /></a>
-                      <p>Избранное</p>
+                      <a href="#"
+                        ><img src="images/index/like-icon.png" />
+                        <p>Избранное</p></a
+                      >
                     </div>
                     <div class="icon-like">
-                      <a href="#"><img src="images/box-icon.png" /></a>
-                      <p>продукты</p>
+                      <a href="pages/all-prodact.html"
+                        ><img src="images/index/box-icon.png" />
+                        <p>продукты</p></a
+                      >
                     </div>
                     <div class="icon-like">
-                      <a href="#"><img src="images/basket-icon.png" /></a>
-                      <p>Корзина</p>
+                      <a href="#"
+                        ><img src="images/index/basket-icon.png" />
+                        <p>Корзина</p></a
+                      >
                     </div>
                   </div>
                   <div class="nav-link-right-r2">
-                    <a href="#"
-                      ><img src="images/usermenu-male.png" alt="male-icon"
+                    <a href="#" id="myBtn"
+                      ><img
+                        src="images/index/usermenu-male.png"
+                        alt="male-icon"
                     /></a>
+                    <div id="myModal" class="modal">
+                      <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="register-box">
+                          <div class="intro-txt-register">
+                            <span>Вход</span>
+                          </div>
+                          <form>
+                            <label for="number">Телефон</label>
+                            <br />
+                            <input
+                              id="number"
+                              type="text"
+                              placeholder="+7 912 |"
+                            />
+                            <br />
+                            <div class="send-btn1">
+                              <a href="#">Вход</a>
+                            </div>
+                            <div class="register">
+                              <button>Регистрация</button>
+                              <p><a href="#">Забыли пароль?</a></p>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -103,7 +140,7 @@
     </header>
     <main>
       <section class="main-section1">
-        <img src="images/fruit-img-bgc.png" alt="fruit img" />
+        <img src="images/index/fruit-img-bgc.png" alt="fruit img" />
         <h1>Доставка бесплатно от 1000 ₽</h1>
       </section>
       <section class="big-home">
@@ -147,7 +184,7 @@
             </div>
             <div class="card-three-cards">
               <div class="card-three-card">
-                <img src="images/card-three-img1.png" />
+                <img src="images/index/card-three-img1.png" />
                 <div class="card-three-txt">
                   <h5>05.03.2021</h5>
                   <h3>
@@ -162,7 +199,7 @@
                 </div>
               </div>
               <div class="card-three-card">
-                <img src="images/card-three-img2.png" />
+                <img src="images/index/card-three-img2.png" />
                 <div class="card-three-txt">
                   <h5>05.03.2021</h5>
                   <h3>
@@ -178,7 +215,7 @@
                 </div>
               </div>
               <div class="card-three-card">
-                <img src="images/card-three-img3.png" />
+                <img src="images/index/card-three-img3.png" />
                 <div class="card-three-txt">
                   <h5>22.02.2020</h5>
                   <h3>ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!</h3>
@@ -197,7 +234,7 @@
       <section class="footer-box">
         <footer class="container footer-center">
           <div class="logo-link-footer">
-            <img src="images/footer-logo3.png" />
+            <img src="images/index/footer-logo3.png" />
             <a href="#">О компании</a>
             <a href="#">Контакты</a>
             <a href="#">Вакансии</a>
@@ -205,20 +242,51 @@
             <a href="#">Политика обработки персональных данных</a>
           </div>
           <div class="social-media">
-            <a href=""><img src="images/instagram.png" /></a>
-            <a href="#"> <img src="images/vkontakte.png" /></a>
-            <a href="#"><img src="images/facebook.png" /></a>
-            <a href="#"><img src="images/ok.png" /></a>
+            <a href=""><img src="images/index/instagram.png" /></a>
+            <a href="#"> <img src="images/index/vkontakte.png" /></a>
+            <a href="#"><img src="images/index/facebook.png" /></a>
+            <a href="#"><img src="images/index/ok.png" /></a>
             <a href="#"> <i class="fa-solid fa-phone"></i></a>
             <span>8 800 777 33 33</span>
           </div>
         </footer>
         <div class="container dizayn">
-          <span>Дизайн <img src="images/dizayn-logo.png" /></span>
+          <span>Дизайн <img src="images/index/dizayn-logo.png" /></span>
+        </div>
+      </section>
+      <section id="menu-mobile">
+        <div class="container">
+          <div class="icon-menu">
+            <a href="#"
+              ><img src="images/index/menu-mobile.png" alt="menu" />
+              <br />Каталог</a
+            >
+            <a href="#"
+              ><img
+                src="images/index/like-icon.png"
+                alt="like"
+              /><br />Избранное</a
+            >
+            <a href="#"
+              ><img
+                src="images/index/box-icon.png"
+                alt="box-icon"
+              /><br />Заказы</a
+            >
+            <a href="#"
+              ><img src="images/index/basket-icon.png" alt="basket" />
+              <br />Корзина</a
+            >
+            <a href="#" class="male-icon"
+              ><img src="images/index/male-icon.png" alt="male-icon"
+            /></a>
+          </div>
         </div>
       </section>
     </main>
     <script src="js/prodacts.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/tab.js"></script>
   </body>
 </html>

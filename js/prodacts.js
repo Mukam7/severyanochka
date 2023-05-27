@@ -7,7 +7,7 @@ const prodacts = [
     price: 89,
     rating: 5.1,
     discount: 0,
-    image: "../images/before-card1.png",
+    image: "../images/index/before-card1.png",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const prodacts = [
     category2: "Обычная",
     rating: 2,
     discount: 20,
-    image: "../images/card-fruit1.png",
+    image: "../images/index/card-fruit1.png",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const prodacts = [
     category2: "Обычная",
     rating: 3,
     discount: 20,
-    image: "../images/card-malako2.png",
+    image: "../images/index/card-malako2.png",
   },
   {
     id: 4,
@@ -40,7 +40,187 @@ const prodacts = [
     category2: "Обычная",
     rating: 5,
     discount: 20,
-    image: "../images/bottle-meat3.png",
+    image: "../images/index/bottle-meat3.png",
+  },
+  {
+    name: "Apple",
+    category: "Fruit",
+    description: "Red apple beautiful and big ",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image:
+      "https://5.imimg.com/data5/LM/DU/MY-22954806/apple-fruit-500x500.jpg",
+  },
+  {
+    name: "Straberry",
+    category: "Fruit",
+    description: "The garden strawberry (or simply strawberry",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSV9MlEn0x_oIJFB8N5Zcc8fdoBjiMc-aLGQ&usqp=CAU",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
   },
   {
     id: 5,
@@ -51,7 +231,7 @@ const prodacts = [
     category2: "Обычная",
     rating: 4,
     discount: 20,
-    image: "../images/bottle2.png",
+    image: "../images/index/bottle2.png",
   },
   {
     id: 6,
@@ -61,7 +241,7 @@ const prodacts = [
     price: 91,
     rating: 5.2,
     discount: 50,
-    image: "../images/novinka-card3.png",
+    image: "../images/index/bottle2.png",
   },
   {
     id: 7,
@@ -71,7 +251,7 @@ const prodacts = [
     price: 68,
     rating: 5.3,
     discount: 20,
-    image: "../images/novinka-card1.png",
+    image: "../images/index/novinka-card1.png",
   },
   {
     id: 8,
@@ -81,7 +261,7 @@ const prodacts = [
     price: 61,
     rating: 5.4,
     discount: 20,
-    image: "../images/novinka-card4.png",
+    image: "../images/index/card-malako2.png",
   },
   {
     id: 9,
@@ -91,7 +271,7 @@ const prodacts = [
     price: 98,
     rating: 2,
     discount: 20,
-    image: "../images/novinka-card1.png",
+    image: "../images/index/novinka-card1.png",
   },
   {
     id: 10,
@@ -101,7 +281,7 @@ const prodacts = [
     price: 79,
     rating: 5,
     discount: 0,
-    image: "../images/novinka-card2.png",
+    image: "../images/index/bottle-meat3.png",
   },
   {
     id: 11,
@@ -111,7 +291,7 @@ const prodacts = [
     price: 89,
     rating: 2,
     discount: 50,
-    image: "../images/novinka-card3.png",
+    image: "../images/index/bottle2.png",
   },
   {
     id: 12,
@@ -121,7 +301,7 @@ const prodacts = [
     price: 61,
     rating: 2,
     discount: 20,
-    image: "../images/novinka-card4.png",
+    image: "../images/index/card-malako2.png",
   },
 ];
 
@@ -130,12 +310,12 @@ let massive_ofisser = [
     id: 1,
     name: "Оформите карту «Северяночка»",
     about: "И получайте бонусы при покупке в магазинах и на сайте",
-    img: "../images/massive2-img1.png",
+    img: "../images/index/massive2-img1.png",
   },
   {
     id: 2,
     name: "Покупайте акционные товары",
     about: "И получайте вдвое больше бонусов",
-    img: "../images/massive2-img2.png",
+    img: "../images/index/massive2-img2.png",
   },
 ];

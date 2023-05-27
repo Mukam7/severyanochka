@@ -1,10 +1,3 @@
-var menuButton = document.getElementById("menu-button");
-var menu = document.getElementById("menu");
-menuButton.addEventListener("click", function () {
-  menu.classList.toggle("show");
-});
-// products card code
-
 const home = document.querySelector("#home");
 
 const prodactsRow = document.createElement("div");
@@ -18,15 +11,11 @@ const prodactsTitle = document.createElement("h1");
 
 prodactsTitle.className = "prodacts-title";
 
-const title = document.createTextNode("Акции");
-
-const allLink = document.createElement("a");
-allLink.href = "#";
-allLink.innerHTML = "Все продукты >";
+const title = document.createTextNode("Все продукты");
 
 prodactsTitle.appendChild(title);
 
-prodactsContent.append(prodactsTitle, allLink);
+prodactsContent.append(prodactsTitle);
 
 home.firstElementChild.append(prodactsContent, prodactsRow);
 
@@ -290,105 +279,3 @@ prodacts
     let card3 = getCardBefore(el.image, el.name, el.description, el.rating);
     beforeBuyRow.appendChild(card3);
   });
-
-// special offers
-
-const bigHome3 = document.querySelector(".big-home");
-
-const container5 = document.createElement("div");
-container5.className = "container";
-
-const massive_ofisserBox = document.createElement("section");
-massive_ofisserBox.id = "ofiserr-box";
-
-const ofiserr_Box_title = document.createElement("div");
-ofiserr_Box_title.className = "ofiserr-box-title";
-
-const h1_ofiserr_title = document.createElement("h1");
-h1_ofiserr_title.innerHTML = "Специальные предложения";
-
-const ofiserr_Box_card = document.createElement("div");
-ofiserr_Box_card.className = "ofiserr-box-card";
-
-const offersBoxLeft = document.createElement("div");
-offersBoxLeft.className = "ofiserr-box-left";
-
-const offersBoxRight = document.createElement("div");
-offersBoxRight.className = "ofiserr-box-right";
-
-bigHome3.append(massive_ofisserBox);
-massive_ofisserBox.append(container5);
-container5.append(ofiserr_Box_title, ofiserr_Box_card);
-ofiserr_Box_card.append(offersBoxLeft, offersBoxRight);
-ofiserr_Box_title.append(h1_ofiserr_title);
-
-massive_ofisser.forEach((ofiserr, index) => {
-  const card = document.createElement("div");
-  card.className = "card";
-
-  const cardTitle = document.createElement("h2");
-  cardTitle.innerHTML = ofiserr.name;
-
-  const cardText = document.createElement("p");
-  cardText.innerHTML = ofiserr.about;
-
-  const cardImg = document.createElement("img");
-  cardImg.alt = ofiserr.name;
-  cardImg.src = ofiserr.img;
-
-  const card_title777 = document.createElement("div");
-  card_title777.className = "card-title";
-
-  const cardBody = document.createElement("div");
-  cardBody.className = "card-body";
-
-  card.append(card_title777, cardBody);
-  card_title777.append(cardTitle, cardText);
-  cardBody.append(cardImg);
-
-  if (index % 2 === 0) {
-    offersBoxLeft.append(card);
-  } else {
-    offersBoxRight.append(card);
-  }
-});
-
-// map - tab
-
-let btn1 = document.getElementById("btn-1");
-let btn2 = document.getElementById("btn-2");
-let btn3 = document.getElementById("btn-3");
-let btn4 = document.getElementById("btn-4");
-let iframes = document.querySelector(".iframe-box");
-
-btn2.addEventListener("click", function () {
-  this.classList.add("active");
-  iframes.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.784760595736!2d69.52622841479428!3d41.31354580853359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae5774bb568c81%3A0x5a794f7263a1e89a!2zQXN0cnVtIC0g0JjQoiDQkNC60LDQtNC10LzQuNGP!5e0!3m2!1sru!2s!4v1681162523155!5m2!1sru!2s" width="100%" height="354" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
-  btn1.classList.remove("active");
-  btn3.classList.remove("active");
-  btn4.classList.remove("active");
-});
-
-btn1.addEventListener("click", function () {
-  this.classList.add("active");
-  iframes.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.0728836780786!2d69.20162391479329!3d41.28551821026812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba578f4f58d%3A0xd7a2ecf23413b7a0!2sNajot%20Ta&#39;lim%20Chilonzor%20Filial!5e0!3m2!1sru!2s!4v1681162866560!5m2!1sru!2s" width="100%" height="354" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
-  btn2.classList.remove("active");
-  btn3.classList.remove("active");
-  btn4.classList.remove("active");
-});
-
-btn3.addEventListener("click", function () {
-  this.classList.add("active");
-  iframes.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.941837267314!2d71.7856761147614!3d40.38798166531257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb83a471c6b55b%3A0x9927f2609db0d333!2sNajot%20Ta&#39;lim%20Farg&#39;ona!5e0!3m2!1sru!2s!4v1681162649582!5m2!1sru!2s" width="100%" height="354" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
-  btn1.classList.remove("active");
-  btn2.classList.remove("active");
-  btn4.classList.remove("active");
-});
-
-btn4.addEventListener("click", function () {
-  this.classList.add("active");
-  iframes.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.784760595736!2d69.52622841479428!3d41.31354580853359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae5774bb568c81%3A0x5a794f7263a1e89a!2zQXN0cnVtIC0g0JjQoiDQkNC60LDQtNC10LzQuNGP!5e0!3m2!1sru!2s!4v1681162693051!5m2!1sru!2s" width="100%" height="354" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
-  btn1.classList.remove("active");
-  btn3.classList.remove("active");
-  btn2.classList.remove("active");
-});
