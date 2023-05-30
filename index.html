@@ -70,7 +70,9 @@
                       </div>
                     </div>
                   </nav>
-                  <a class="cataloc-click" href="#">Каталог</a>
+                  <a class="cataloc-click" href="./pages/catalok.html"
+                    >Каталог</a
+                  >
                 </div>
                 <div class="search">
                   <input type="text" placeholder="Найти товар" />
@@ -120,10 +122,10 @@
                             />
                             <br />
                             <div class="send-btn1">
-                              <a href="#">Вход</a>
+                              <button><a href="#">Вход</a></button>
                             </div>
                             <div class="register">
-                              <button>Регистрация</button>
+                              <button><a href="#">Регистрация</a></button>
                               <p><a href="#">Забыли пароль?</a></p>
                             </div>
                           </form>
@@ -267,7 +269,7 @@
                 alt="like"
               /><br />Избранное</a
             >
-            <a href="#"
+            <a href="./pages/all-prodact.html"
               ><img
                 src="images/index/box-icon.png"
                 alt="box-icon"
@@ -277,9 +279,34 @@
               ><img src="images/index/basket-icon.png" alt="basket" />
               <br />Корзина</a
             >
-            <a href="#" class="male-icon"
+            <a href="#" id="myBtn2" class="male-icon"
               ><img src="images/index/male-icon.png" alt="male-icon"
             /></a>
+
+            <div id="myModal-mobile" class="modal-mobile">
+              <div class="modal-content">
+                <span class="closes">&times;</span>
+                <div class="register-box">
+                  <div class="intro-txt-register">
+                    <span>Вход</span>
+                  </div>
+                  <form>
+                    <label for="number">Телефон</label>
+                    <br />
+                    <input id="number" type="text" placeholder="+7 912 |" />
+                    <br />
+                    <div class="send-btn1">
+                      <button><a href="#">Вход</a></button>
+                    </div>
+                    <div class="register">
+                      <button><a href="#">Регистрация</a></button>
+                      <p><a href="#">Забыли пароль?</a></p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            3
           </div>
         </div>
       </section>
@@ -288,5 +315,6 @@
     <script src="js/index.js"></script>
     <script src="js/header.js"></script>
     <script src="js/tab.js"></script>
+    <script src="js/include_html.js"></script>
   </body>
 </html>

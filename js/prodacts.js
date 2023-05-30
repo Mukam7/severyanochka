@@ -49,8 +49,7 @@ const prodacts = [
     price: 87,
     rating: 5,
     discount: 0,
-    image:
-      "https://5.imimg.com/data5/LM/DU/MY-22954806/apple-fruit-500x500.jpg",
+    image: "https://picsum.photos/200/300/?food12",
   },
   {
     name: "Straberry",
@@ -59,17 +58,6 @@ const prodacts = [
     price: 87,
     rating: 5,
     discount: 0,
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSV9MlEn0x_oIJFB8N5Zcc8fdoBjiMc-aLGQ&usqp=CAU",
-  },
-  {
-    name: "Hamburger",
-    category: "Fast food",
-    description:
-      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
-    price: 87,
-    rating: 5,
-    discount: 0,
     image: "https://picsum.photos/200/300/?food12",
   },
   {
@@ -82,6 +70,17 @@ const prodacts = [
     discount: 0,
     image: "https://picsum.photos/200/300/?food12",
   },
+  {
+    name: "Hamburger",
+    category: "Fast food",
+    description:
+      "A sandwich made with a patty of ground beef, served on a bun with various toppings.",
+    price: 87,
+    rating: 5,
+    discount: 0,
+    image: "https://picsum.photos/200/300/?food12",
+  },
+
   {
     name: "Hamburger",
     category: "Fast food",
@@ -319,3 +318,7 @@ let massive_ofisser = [
     img: "../images/index/massive2-img2.png",
   },
 ];
+
+
+
+

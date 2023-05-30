@@ -1,0 +1,17 @@
+@import "../_global";
+
+main {
+  padding-top: 150px;
+  .page-link {
+    a {
+      @include alink;
+      margin-left: 10px;
+    }
+  }
+  .h1-link {
+    h1 {
+      @include h1link;
+      padding-top: 50px;
+    }
+  }
+}

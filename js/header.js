@@ -25,3 +25,23 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+var modal_2 = document.getElementById("myModal-mobile");
+
+var btn2 = document.getElementById("myBtn2");
+
+var span2 = document.getElementsByClassName("closes")[0];
+
+btn2.onclick = function () {
+  modal_2.style.display = "block";
+};
+
+span2.onclick = function () {
+  modal_2.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal_2) {
+    modal_2.style.display = "none";
+  }
+};
