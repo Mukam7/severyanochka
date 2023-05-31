@@ -28,11 +28,11 @@ window.onclick = function (event) {
 
 var modal_2 = document.getElementById("myModal-mobile");
 
-var btn2 = document.getElementById("myBtn2");
+var btn22 = document.getElementById("myBtn2");
 
 var span2 = document.getElementsByClassName("closes")[0];
 
-btn2.onclick = function () {
+btn22.onclick = function () {
   modal_2.style.display = "block";
 };
 

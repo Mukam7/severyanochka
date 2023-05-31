@@ -319,6 +319,71 @@ let massive_ofisser = [
   },
 ];
 
+const catalok_Massiv = [
+  {
+    id: 0,
+    img: "../images/catalok/catalok1.png",
+    name: "Молоко, сыр, яйцо",
+  },
+  {
+    id: 1,
+    img: "../images/catalok/catalok2.png",
+    name: "Хлеб",
+  },
+  {
+    id: 2,
+    img: "../images/catalok/catalok3.png",
+    name: "Фрукты и овощи",
+  },
+  {
+    id: 3,
+    img: "../images/catalok/catalok4.png",
+    name: "Напитки",
+  },
+  {
+    id: 4,
+    img: "../images/catalok/catalok5.png",
+    name: "Кондитерские изделия",
+  },
+  {
+    id: 5,
+    img: "../images/catalok/catalok6.png",
+    name: "Чай, кофе",
+  },
 
-
-
+  {
+    id: 6,
+    img: "../images/catalok/catalok7.png",
+    name: "Бакалея",
+  },
+  {
+    id: 7,
+    img: "../images/catalok/catalok8.png",
+    name: "Здоровое питание",
+  },
+  {
+    id: 8,
+    img: "../images/catalok/catalok9.png",
+    name: "Зоотовары",
+  },
+  {
+    id: 9,
+    img: "../images/catalok/catalok10.png",
+    name: "Фрукты и овощи",
+  },
+  {
+    id: 10,
+    img: "../images/catalok/catalok11.png",
+    name: "Напитки",
+  },
+  {
+    id: 11,
+    img: "../images/catalok/catalok12.png",
+    name: "Кондитерские изделия",
+  },
+  {
+    id: 12,
+    img: "../images/catalok/catalok13.png",
+    name: "Чай, кофе",
+  },
+];

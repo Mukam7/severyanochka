@@ -56,6 +56,14 @@
   }
 }
 
+@media (max-width: 768px) {
+    .logo-link-footer {
+    a {
+      display: grid !important;
+    }
+  }
+}
+
 @media (max-width: 360px) {
   #menu-mobile {
     display: block !important;
