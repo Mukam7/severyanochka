@@ -570,6 +570,7 @@ li {
   border-radius: 4px;
   border: none;
   padding: 15px 25px;
+  cursor: pointer;
 }
 .tab-map-card-footer .tab .active {
   background: #70c05b !important;
@@ -637,6 +638,7 @@ li {
   border-radius: 4px;
   border: none;
   padding: 15px 25px;
+  cursor: pointer;
   margin-top: 15px;
 }
 .tab-map-card-footer #card-three .card-three-cards .card-three-card .card-three-txt button:hover {
